@@ -7,15 +7,23 @@
   pnpmConfigHook,
 }:
 
+let
+  versionData = builtins.fromJSON (builtins.readFile ./hashes.json);
+  inherit (versionData)
+    version
+    hash
+    pnpmDepsHash
+    ;
+in
 buildNpmPackage rec {
   pname = "opencode-quota";
-  version = "3.8.7";
+  inherit version;
 
   src = fetchFromGitHub {
     owner = "slkiser";
     repo = "opencode-quota";
     rev = "v${version}";
-    hash = "sha256-QtHBmLvGimkuY1QsBURXgW8utDT7rntO63KtIqlVDlU=";
+    inherit hash;
   };
 
   # Upstream tags the release commit before bumping package.json; the npm
@@ -30,7 +38,7 @@ buildNpmPackage rec {
     inherit pname version src;
     inherit pnpm;
     fetcherVersion = 3;
-    hash = "sha256-v9jKI+ALrGicKVIqudfezjSWst7z4YOBWjGvT1IlPY4=";
+    hash = pnpmDepsHash;
   };
 
   nativeBuildInputs = [ pnpm ];
