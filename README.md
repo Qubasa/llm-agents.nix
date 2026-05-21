@@ -573,6 +573,16 @@ Nix packages for AI coding agents and development tools. Automatically updated d
 - **Nix**: [packages/ccusage/package.nix](packages/ccusage/package.nix)
 
 </details>
+<details>
+<summary><strong>opencode-quota</strong> - OpenCode quota and token usage tracker with zero context window pollution</summary>
+
+- **Source**: source
+- **License**: MIT
+- **Homepage**: https://github.com/slkiser/opencode-quota
+- **Usage**: `nix run github:numtide/llm-agents.nix#opencode-quota -- --help`
+- **Nix**: [packages/opencode-quota/package.nix](packages/opencode-quota/package.nix)
+
+</details>
 
 ### Workflow & Project Management
 
