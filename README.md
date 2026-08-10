@@ -1524,6 +1524,16 @@ Nix packages for AI coding agents and development tools. Automatically updated d
 - **Nix**: [packages/toon/package.nix](packages/toon/package.nix)
 
 </details>
+<details>
+<summary><strong>uncomment</strong> - CLI to remove comments from code using tree-sitter</summary>
+
+- **Source**: source
+- **License**: MIT
+- **Homepage**: https://github.com/Goldziher/uncomment
+- **Usage**: `nix run github:numtide/llm-agents.nix#uncomment -- --help`
+- **Nix**: [packages/uncomment/package.nix](packages/uncomment/package.nix)
+
+</details>
 <!-- END GENERATED PACKAGE DOCS -->
 
 ## Installation
