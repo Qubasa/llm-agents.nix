@@ -1215,6 +1215,16 @@ Nix packages for AI coding agents and development tools. Automatically updated d
 
 </details>
 <details>
+<summary><strong>lemmalog</strong> - Datalog engine for LLM agent memory with provenance, bi-temporal facts, and an MCP server</summary>
+
+- **Source**: source
+- **License**: MIT
+- **Homepage**: https://github.com/JordyZomer/lemmalog
+- **Usage**: `nix run github:numtide/llm-agents.nix#lemmalog -- --help`
+- **Nix**: [packages/lemmalog/package.nix](packages/lemmalog/package.nix)
+
+</details>
+<details>
 <summary><strong>memvid-cli</strong> - AI memory CLI - crash-safe, single-file storage with semantic search</summary>
 
 - **Source**: binary
