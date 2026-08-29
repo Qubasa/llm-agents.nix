@@ -474,6 +474,16 @@ Nix packages for AI coding agents and development tools. Automatically updated d
 
 </details>
 <details>
+<summary><strong>atomic-chat</strong> - Local AI chat app and inference engine for open-weight models</summary>
+
+- **Source**: binary
+- **License**: Apache-2.0
+- **Homepage**: https://atomic.chat
+- **Usage**: `nix run github:numtide/llm-agents.nix#atomic-chat -- --help`
+- **Nix**: [packages/atomic-chat/package.nix](packages/atomic-chat/package.nix)
+
+</details>
+<details>
 <summary><strong>hermes-agent</strong> - Self-improving AI agent by Nous Research — creates skills from experience and runs anywhere</summary>
 
 - **Source**: source
