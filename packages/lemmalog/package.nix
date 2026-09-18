@@ -11,11 +11,11 @@ rustPlatform.buildRustPackage {
   src = fetchFromGitHub {
     owner = "JordyZomer";
     repo = "lemmalog";
-    rev = "7d6f1541130aba53949a2da90cc3e134cb0aac01";
-    hash = "sha256-N+Q8NTG4NXesNBQvNExpKJrQ2sjmYicgXCCgeChQAdU=";
+    rev = "b8e24dbd80df61b7c6f1757dd77342a6228a6f84";
+    hash = "sha256-lh88fdpxnBxit0cBSBdAQI5cO6sgLqkw9bcnwxe90dc=";
   };
 
-  cargoHash = "sha256-v/RP0bLvxllkIqzNQzhVlSw9oXF4E86nag0hVxhOTEg=";
+  cargoHash = "sha256-6XNsbyzVcVljrOMXmemSDzKjYdEFZ+a9/GY8myy+iPY=";
 
   # llm: OpenAI-compatible chat/embeddings client (ureq).
   # mcp: the lemmalog-mcp stdio server binary.
